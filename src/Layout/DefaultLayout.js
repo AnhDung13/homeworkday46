@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 
-export const DefaultLayout = () => {
+export const DefaultLayout = (body) => {
   return `
     <header class="mb-3 p-4 border-bottom">
         <div class="container">
@@ -18,8 +18,8 @@ export const DefaultLayout = () => {
                         <li><a href="/san-pham" data-route>Sản phẩm</a></li>
                     </ul>
                 </div>
-                <div class="col-9 body">
-                
+                <div class="col-9">
+                    ${body}
                 </div>
             </div>
         </div>
